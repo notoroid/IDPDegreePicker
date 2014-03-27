@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87E7C35B18E49B0800E1C421 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7C35A18E49B0800E1C421 /* Foundation.framework */; };
+		87E7C35D18E49B0800E1C421 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7C35C18E49B0800E1C421 /* CoreGraphics.framework */; };
+		87E7C35F18E49B0800E1C421 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7C35E18E49B0800E1C421 /* UIKit.framework */; };
+		87E7C36518E49B0800E1C421 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87E7C36318E49B0800E1C421 /* InfoPlist.strings */; };
+		87E7C36718E49B0800E1C421 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7C36618E49B0800E1C421 /* main.m */; };
+		87E7C36B18E49B0800E1C421 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7C36A18E49B0800E1C421 /* AppDelegate.m */; };
+		87E7C36E18E49B0800E1C421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E7C36C18E49B0800E1C421 /* Main.storyboard */; };
+		87E7C37118E49B0800E1C421 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7C37018E49B0800E1C421 /* ViewController.m */; };
+		87E7C37318E49B0800E1C421 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E7C37218E49B0800E1C421 /* Images.xcassets */; };
+		87E7C37A18E49B0800E1C421 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7C37918E49B0800E1C421 /* XCTest.framework */; };
+		87E7C37B18E49B0800E1C421 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7C35A18E49B0800E1C421 /* Foundation.framework */; };
+		87E7C37C18E49B0800E1C421 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7C35E18E49B0800E1C421 /* UIKit.framework */; };
+		87E7C38418E49B0800E1C421 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87E7C38218E49B0800E1C421 /* InfoPlist.strings */; };
+		87E7C38618E49B0800E1C421 /* IDPDegreePickerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7C38518E49B0800E1C421 /* IDPDegreePickerExampleTests.m */; };
+		87E7C39818E49B5200E1C421 /* IDPDegreeCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7C39118E49B5200E1C421 /* IDPDegreeCenterView.m */; };
+		87E7C39918E49B5200E1C421 /* IDPDegreePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7C39318E49B5200E1C421 /* IDPDegreePicker.m */; };
+		87E7C39A18E49B5200E1C421 /* IDPDegreeShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7C39518E49B5200E1C421 /* IDPDegreeShadowView.m */; };
+		87E7C39B18E49B5200E1C421 /* IDPDegreePickerBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7C39718E49B5200E1C421 /* IDPDegreePickerBaseView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87E7C37D18E49B0800E1C421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87E7C34F18E49B0800E1C421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87E7C35618E49B0800E1C421;
+			remoteInfo = IDPDegreePickerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87E7C35718E49B0800E1C421 /* IDPDegreePickerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDPDegreePickerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E7C35A18E49B0800E1C421 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		87E7C35C18E49B0800E1C421 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		87E7C35E18E49B0800E1C421 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		87E7C36218E49B0800E1C421 /* IDPDegreePickerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDPDegreePickerExample-Info.plist"; sourceTree = "<group>"; };
+		87E7C36418E49B0800E1C421 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		87E7C36618E49B0800E1C421 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87E7C36818E49B0800E1C421 /* IDPDegreePickerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDPDegreePickerExample-Prefix.pch"; sourceTree = "<group>"; };
+		87E7C36918E49B0800E1C421 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87E7C36A18E49B0800E1C421 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87E7C36D18E49B0800E1C421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87E7C36F18E49B0800E1C421 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		87E7C37018E49B0800E1C421 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		87E7C37218E49B0800E1C421 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		87E7C37818E49B0800E1C421 /* IDPDegreePickerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDPDegreePickerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E7C37918E49B0800E1C421 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		87E7C38118E49B0800E1C421 /* IDPDegreePickerExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDPDegreePickerExampleTests-Info.plist"; sourceTree = "<group>"; };
+		87E7C38318E49B0800E1C421 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		87E7C38518E49B0800E1C421 /* IDPDegreePickerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPDegreePickerExampleTests.m; sourceTree = "<group>"; };
+		87E7C39018E49B5200E1C421 /* IDPDegreeCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPDegreeCenterView.h; sourceTree = "<group>"; };
+		87E7C39118E49B5200E1C421 /* IDPDegreeCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPDegreeCenterView.m; sourceTree = "<group>"; };
+		87E7C39218E49B5200E1C421 /* IDPDegreePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPDegreePicker.h; sourceTree = "<group>"; };
+		87E7C39318E49B5200E1C421 /* IDPDegreePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPDegreePicker.m; sourceTree = "<group>"; };
+		87E7C39418E49B5200E1C421 /* IDPDegreeShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPDegreeShadowView.h; sourceTree = "<group>"; };
+		87E7C39518E49B5200E1C421 /* IDPDegreeShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPDegreeShadowView.m; sourceTree = "<group>"; };
+		87E7C39618E49B5200E1C421 /* IDPDegreePickerBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPDegreePickerBaseView.h; sourceTree = "<group>"; };
+		87E7C39718E49B5200E1C421 /* IDPDegreePickerBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPDegreePickerBaseView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87E7C35418E49B0800E1C421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E7C35D18E49B0800E1C421 /* CoreGraphics.framework in Frameworks */,
+				87E7C35F18E49B0800E1C421 /* UIKit.framework in Frameworks */,
+				87E7C35B18E49B0800E1C421 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E7C37518E49B0800E1C421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E7C37A18E49B0800E1C421 /* XCTest.framework in Frameworks */,
+				87E7C37C18E49B0800E1C421 /* UIKit.framework in Frameworks */,
+				87E7C37B18E49B0800E1C421 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87E7C34E18E49B0800E1C421 = {
+			isa = PBXGroup;
+			children = (
+				87E7C36018E49B0800E1C421 /* IDPDegreePickerExample */,
+				87E7C37F18E49B0800E1C421 /* IDPDegreePickerExampleTests */,
+				87E7C35918E49B0800E1C421 /* Frameworks */,
+				87E7C35818E49B0800E1C421 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87E7C35818E49B0800E1C421 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87E7C35718E49B0800E1C421 /* IDPDegreePickerExample.app */,
+				87E7C37818E49B0800E1C421 /* IDPDegreePickerExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87E7C35918E49B0800E1C421 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87E7C35A18E49B0800E1C421 /* Foundation.framework */,
+				87E7C35C18E49B0800E1C421 /* CoreGraphics.framework */,
+				87E7C35E18E49B0800E1C421 /* UIKit.framework */,
+				87E7C37918E49B0800E1C421 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87E7C36018E49B0800E1C421 /* IDPDegreePickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				87E7C38F18E49B5200E1C421 /* Lib */,
+				87E7C36918E49B0800E1C421 /* AppDelegate.h */,
+				87E7C36A18E49B0800E1C421 /* AppDelegate.m */,
+				87E7C36C18E49B0800E1C421 /* Main.storyboard */,
+				87E7C36F18E49B0800E1C421 /* ViewController.h */,
+				87E7C37018E49B0800E1C421 /* ViewController.m */,
+				87E7C37218E49B0800E1C421 /* Images.xcassets */,
+				87E7C36118E49B0800E1C421 /* Supporting Files */,
+			);
+			path = IDPDegreePickerExample;
+			sourceTree = "<group>";
+		};
+		87E7C36118E49B0800E1C421 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87E7C36218E49B0800E1C421 /* IDPDegreePickerExample-Info.plist */,
+				87E7C36318E49B0800E1C421 /* InfoPlist.strings */,
+				87E7C36618E49B0800E1C421 /* main.m */,
+				87E7C36818E49B0800E1C421 /* IDPDegreePickerExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87E7C37F18E49B0800E1C421 /* IDPDegreePickerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				87E7C38518E49B0800E1C421 /* IDPDegreePickerExampleTests.m */,
+				87E7C38018E49B0800E1C421 /* Supporting Files */,
+			);
+			path = IDPDegreePickerExampleTests;
+			sourceTree = "<group>";
+		};
+		87E7C38018E49B0800E1C421 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87E7C38118E49B0800E1C421 /* IDPDegreePickerExampleTests-Info.plist */,
+				87E7C38218E49B0800E1C421 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87E7C38F18E49B5200E1C421 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				87E7C39018E49B5200E1C421 /* IDPDegreeCenterView.h */,
+				87E7C39118E49B5200E1C421 /* IDPDegreeCenterView.m */,
+				87E7C39218E49B5200E1C421 /* IDPDegreePicker.h */,
+				87E7C39318E49B5200E1C421 /* IDPDegreePicker.m */,
+				87E7C39418E49B5200E1C421 /* IDPDegreeShadowView.h */,
+				87E7C39518E49B5200E1C421 /* IDPDegreeShadowView.m */,
+				87E7C39618E49B5200E1C421 /* IDPDegreePickerBaseView.h */,
+				87E7C39718E49B5200E1C421 /* IDPDegreePickerBaseView.m */,
+			);
+			path = Lib;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87E7C35618E49B0800E1C421 /* IDPDegreePickerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E7C38918E49B0800E1C421 /* Build configuration list for PBXNativeTarget "IDPDegreePickerExample" */;
+			buildPhases = (
+				87E7C35318E49B0800E1C421 /* Sources */,
+				87E7C35418E49B0800E1C421 /* Frameworks */,
+				87E7C35518E49B0800E1C421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IDPDegreePickerExample;
+			productName = IDPDegreePickerExample;
+			productReference = 87E7C35718E49B0800E1C421 /* IDPDegreePickerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87E7C37718E49B0800E1C421 /* IDPDegreePickerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E7C38C18E49B0800E1C421 /* Build configuration list for PBXNativeTarget "IDPDegreePickerExampleTests" */;
+			buildPhases = (
+				87E7C37418E49B0800E1C421 /* Sources */,
+				87E7C37518E49B0800E1C421 /* Frameworks */,
+				87E7C37618E49B0800E1C421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87E7C37E18E49B0800E1C421 /* PBXTargetDependency */,
+			);
+			name = IDPDegreePickerExampleTests;
+			productName = IDPDegreePickerExampleTests;
+			productReference = 87E7C37818E49B0800E1C421 /* IDPDegreePickerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87E7C34F18E49B0800E1C421 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Irimasu Densan Planning";
+				TargetAttributes = {
+					87E7C37718E49B0800E1C421 = {
+						TestTargetID = 87E7C35618E49B0800E1C421;
+					};
+				};
+			};
+			buildConfigurationList = 87E7C35218E49B0800E1C421 /* Build configuration list for PBXProject "IDPDegreePickerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87E7C34E18E49B0800E1C421;
+			productRefGroup = 87E7C35818E49B0800E1C421 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87E7C35618E49B0800E1C421 /* IDPDegreePickerExample */,
+				87E7C37718E49B0800E1C421 /* IDPDegreePickerExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87E7C35518E49B0800E1C421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E7C37318E49B0800E1C421 /* Images.xcassets in Resources */,
+				87E7C36518E49B0800E1C421 /* InfoPlist.strings in Resources */,
+				87E7C36E18E49B0800E1C421 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E7C37618E49B0800E1C421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E7C38418E49B0800E1C421 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87E7C35318E49B0800E1C421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E7C39A18E49B5200E1C421 /* IDPDegreeShadowView.m in Sources */,
+				87E7C37118E49B0800E1C421 /* ViewController.m in Sources */,
+				87E7C39818E49B5200E1C421 /* IDPDegreeCenterView.m in Sources */,
+				87E7C36B18E49B0800E1C421 /* AppDelegate.m in Sources */,
+				87E7C39B18E49B5200E1C421 /* IDPDegreePickerBaseView.m in Sources */,
+				87E7C39918E49B5200E1C421 /* IDPDegreePicker.m in Sources */,
+				87E7C36718E49B0800E1C421 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E7C37418E49B0800E1C421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E7C38618E49B0800E1C421 /* IDPDegreePickerExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87E7C37E18E49B0800E1C421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87E7C35618E49B0800E1C421 /* IDPDegreePickerExample */;
+			targetProxy = 87E7C37D18E49B0800E1C421 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87E7C36318E49B0800E1C421 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87E7C36418E49B0800E1C421 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		87E7C36C18E49B0800E1C421 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87E7C36D18E49B0800E1C421 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87E7C38218E49B0800E1C421 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87E7C38318E49B0800E1C421 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87E7C38718E49B0800E1C421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		87E7C38818E49B0800E1C421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87E7C38A18E49B0800E1C421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDPDegreePickerExample/IDPDegreePickerExample-Prefix.pch";
+				INFOPLIST_FILE = "IDPDegreePickerExample/IDPDegreePickerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		87E7C38B18E49B0800E1C421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDPDegreePickerExample/IDPDegreePickerExample-Prefix.pch";
+				INFOPLIST_FILE = "IDPDegreePickerExample/IDPDegreePickerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		87E7C38D18E49B0800E1C421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IDPDegreePickerExample.app/IDPDegreePickerExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDPDegreePickerExample/IDPDegreePickerExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IDPDegreePickerExampleTests/IDPDegreePickerExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		87E7C38E18E49B0800E1C421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IDPDegreePickerExample.app/IDPDegreePickerExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDPDegreePickerExample/IDPDegreePickerExample-Prefix.pch";
+				INFOPLIST_FILE = "IDPDegreePickerExampleTests/IDPDegreePickerExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87E7C35218E49B0800E1C421 /* Build configuration list for PBXProject "IDPDegreePickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E7C38718E49B0800E1C421 /* Debug */,
+				87E7C38818E49B0800E1C421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E7C38918E49B0800E1C421 /* Build configuration list for PBXNativeTarget "IDPDegreePickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E7C38A18E49B0800E1C421 /* Debug */,
+				87E7C38B18E49B0800E1C421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E7C38C18E49B0800E1C421 /* Build configuration list for PBXNativeTarget "IDPDegreePickerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E7C38D18E49B0800E1C421 /* Debug */,
+				87E7C38E18E49B0800E1C421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87E7C34F18E49B0800E1C421 /* Project object */;
+}
