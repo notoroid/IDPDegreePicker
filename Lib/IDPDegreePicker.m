@@ -23,8 +23,10 @@
 {
     self.backgroundColor = [UIColor colorWithRed:.08f green:.08f blue:.08f alpha:1];
     
-    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(.0f, .0f, 320.0f, 144.0f)];
-    _scrollView.contentSize = CGSizeMake(920, 144);
+#define IDP_DEGREE_SLIDER_HEIGHT 144.0f
+    
+    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(.0f, self.frame.size.height - IDP_DEGREE_SLIDER_HEIGHT, 320.0f, IDP_DEGREE_SLIDER_HEIGHT)];
+    _scrollView.contentSize = CGSizeMake(920, IDP_DEGREE_SLIDER_HEIGHT);
     _scrollView.bounces = NO;
     _scrollView.delegate = self;
     _scrollView.showsHorizontalScrollIndicator = NO;
@@ -35,14 +37,14 @@
     boardView.frame = CGRectMake(.0f, .0f, 920.0f, 144.0f);
     boardView.opaque = NO;
     [_scrollView addSubview:boardView];
-#define DEGREE_SLIDER_CENTER_POSITION (920.0f * .5f - 160.0f)
-#define DEGREE_SLIDER_DEGREE 12.0f
+#define IDP_DEGREE_SLIDER_CENTER_POSITION (920.0f * .5f - 160.0f)
+#define IDP_DEGREE_SLIDER_DEGREE 12.0f
     
     _degree = ceil(_degree * 2.0) * .5f;
     _degree = _degree < 25.0f ? _degree : 25.0f;
     _degree = _degree > -25.0f ? _degree : -25.0f;
     
-    _scrollView.contentOffset = CGPointMake(DEGREE_SLIDER_CENTER_POSITION + _degree * DEGREE_SLIDER_DEGREE, .0f);
+    _scrollView.contentOffset = CGPointMake(IDP_DEGREE_SLIDER_CENTER_POSITION + _degree * IDP_DEGREE_SLIDER_DEGREE, .0f);
     
     
     UIView *shadowView = [[IDPDegreeShadowView alloc] init] /*[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"DegreeSliderShadow.ong"]]*/;
@@ -78,7 +80,7 @@
 {
     CGPoint contentOffset = scrollView.contentOffset;
     
-    CGFloat degree = (contentOffset.x - DEGREE_SLIDER_CENTER_POSITION) / DEGREE_SLIDER_DEGREE;
+    CGFloat degree = (contentOffset.x - IDP_DEGREE_SLIDER_CENTER_POSITION) / IDP_DEGREE_SLIDER_DEGREE;
     degree = ceil(degree * 2.0 - .5f) * .5f;
     degree = degree < 25.0f ? degree : 25.0f;
     degree = degree > -25.0f ? degree : -25.0f;
@@ -96,7 +98,7 @@
     CGPoint contentOffset = scrollView.contentOffset;
     *targetContentOffset = contentOffset;
     
-    CGFloat degree = (contentOffset.x - DEGREE_SLIDER_CENTER_POSITION) / DEGREE_SLIDER_DEGREE;
+    CGFloat degree = (contentOffset.x - IDP_DEGREE_SLIDER_CENTER_POSITION) / IDP_DEGREE_SLIDER_DEGREE;
     degree = ceil(degree * 2.0 - .5f) * .5f;
     degree = degree < 25.0f ? degree : 25.0f;
     degree = degree > -25.0f ? degree : -25.0f;
@@ -116,7 +118,7 @@
     degree = degree > -25.0f ? degree : -25.0f;
     
     if( _degree != degree ){
-        _scrollView.contentOffset = CGPointMake(DEGREE_SLIDER_CENTER_POSITION + _degree * DEGREE_SLIDER_DEGREE, .0f);
+        _scrollView.contentOffset = CGPointMake(IDP_DEGREE_SLIDER_CENTER_POSITION + _degree * IDP_DEGREE_SLIDER_DEGREE, .0f);
     }
     
 }
