@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8795D0CC18EDCF0F001B5791 /* IDPDegreePickerLowBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8795D0CB18EDCF0F001B5791 /* IDPDegreePickerLowBaseView.m */; };
 		87E7C35B18E49B0800E1C421 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7C35A18E49B0800E1C421 /* Foundation.framework */; };
 		87E7C35D18E49B0800E1C421 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7C35C18E49B0800E1C421 /* CoreGraphics.framework */; };
 		87E7C35F18E49B0800E1C421 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7C35E18E49B0800E1C421 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8795D0CA18EDCF0F001B5791 /* IDPDegreePickerLowBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPDegreePickerLowBaseView.h; sourceTree = "<group>"; };
+		8795D0CB18EDCF0F001B5791 /* IDPDegreePickerLowBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPDegreePickerLowBaseView.m; sourceTree = "<group>"; };
 		87E7C35718E49B0800E1C421 /* IDPDegreePickerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDPDegreePickerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E7C35A18E49B0800E1C421 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		87E7C35C18E49B0800E1C421 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,6 +179,8 @@
 				87E7C39518E49B5200E1C421 /* IDPDegreeShadowView.m */,
 				87E7C39618E49B5200E1C421 /* IDPDegreePickerBaseView.h */,
 				87E7C39718E49B5200E1C421 /* IDPDegreePickerBaseView.m */,
+				8795D0CA18EDCF0F001B5791 /* IDPDegreePickerLowBaseView.h */,
+				8795D0CB18EDCF0F001B5791 /* IDPDegreePickerLowBaseView.m */,
 			);
 			path = Lib;
 			sourceTree = SOURCE_ROOT;
@@ -283,6 +288,7 @@
 				87E7C36B18E49B0800E1C421 /* AppDelegate.m in Sources */,
 				87E7C39B18E49B5200E1C421 /* IDPDegreePickerBaseView.m in Sources */,
 				87E7C39918E49B5200E1C421 /* IDPDegreePicker.m in Sources */,
+				8795D0CC18EDCF0F001B5791 /* IDPDegreePickerLowBaseView.m in Sources */,
 				87E7C36718E49B0800E1C421 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
