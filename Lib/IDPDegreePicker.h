@@ -18,7 +18,8 @@
 
 
 @protocol IDPDegreePickerDelegate <NSObject>
-
 - (void) degreePickerDelegateDidValueChange:(IDPDegreePicker *)picker;
-
+@optional
+- (void) degreePickerDelegateBeginSlide:(IDPDegreePicker *)picker;
+- (void) degreePickerDelegateEndSlide:(IDPDegreePicker *)picker;
 @end

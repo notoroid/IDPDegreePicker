@@ -97,6 +97,13 @@
     
 }
 
+- (void) scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    if( [_delegate respondsToSelector:@selector(degreePickerDelegateBeginSlide:)] ){
+        [_delegate degreePickerDelegateBeginSlide:self];
+    }
+}
+
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
 {
     CGPoint contentOffset = scrollView.contentOffset;
@@ -113,7 +120,11 @@
         [_delegate degreePickerDelegateDidValueChange:self];
     }
     
+    if( [_delegate respondsToSelector:@selector(degreePickerDelegateEndSlide:)] ){
+        [_delegate degreePickerDelegateEndSlide:self];
+    }
 }
+
 
 - (void) setDegree:(CGFloat)degree
 {
