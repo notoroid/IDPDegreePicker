@@ -133,6 +133,7 @@
     degree = degree > -25.0f ? degree : -25.0f;
     
     if( _degree != degree ){
+        _degree = degree;
         _scrollView.contentOffset = CGPointMake(IDP_DEGREE_SLIDER_CENTER_POSITION + _degree * IDP_DEGREE_SLIDER_DEGREE, .0f);
     }
     
