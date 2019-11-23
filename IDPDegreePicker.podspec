@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "IDPDegreePicker"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "IDPDegreePicker is degree(-25degree to 25degree) picker for for iOS"
 
   s.description  = <<-DESC
@@ -17,8 +17,8 @@ IDPDegreePicker is the user interface for iOS for specifying the angle of up to 
   s.author             = { "notoroid" => "noto@irimasu.com" }
   s.social_media_url   = "http://twitter.com/notoroid"
 
-  s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/notoroid/IDPDegreePicker.git", :tag => "v0.0.2" }
+  s.platform     = :ios, "8.0"
+  s.source       = { :git => "https://github.com/notoroid/IDPDegreePicker.git", :tag => "v0.0.3" }
 
   s.source_files  = "Lib/**/*.{h,m}"
   s.public_header_files = "Lib/**/*.h"
